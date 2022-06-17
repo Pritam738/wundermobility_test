@@ -58,6 +58,7 @@ export class Checkout {
 
     public total() {
         console.log('Total:', new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(this.cart.total(this.order)))
+        return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(this.cart.total(this.order))
     }
 
 }
