@@ -1,0 +1,32 @@
+{
+  "name": "wunder_mobility_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "jest": {
+    "collectCoverage": true,
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "dist"
+    ]
+  },
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "test": "jest --detectOpenHandles --colors -w 1 --verbose"
+  },
+  "keywords": [],
+  "author": "Pritam sen",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.15",
+    "@types/jest": "^26.0.20",
+    "ts-jest": "^26.4.4",
+    "jest": "^26.6.3",
+    "ts-node": "^10.8.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {}
+}
